@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'vaadin-bugs'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation VAADIN_SERVER
+    implementation VAADIN_PUSH
+    implementation VAADIN_THEMES
+    implementation VAADIN_SHARED
+    implementation VAADIN_CLIENT
+    implementation VAADIN_CLIENT_COMPILED
+
+    implementation JETTY_CONTINUATION
+    implementation JETTY_WEBSOCKET_SERVER_IMPL
+    implementation JETTY_SERVER
+    implementation JETTY_SERVLET
+}
